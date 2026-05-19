@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@apollo/server": "^5.0.0",
+    "@libsql/client": "^0.17.3",
     "drizzle-orm": "^0.38.0",
     "graphql": "^16.9.0"
   },
