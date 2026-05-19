@@ -1,4 +1,4 @@
-.PHONY: install setup dev build start migrate seed clean
+.PHONY: install setup dev build start migrate seed test clean
 
 install:
 	npm install
@@ -12,7 +12,7 @@ dev:
 build:
 	npm run build
 
-start:
+start: build
 	npm start
 
 migrate:
@@ -20,6 +20,9 @@ migrate:
 
 seed:
 	npm run seed
+
+test:
+	npm test
 
 clean:
 	rm -rf dist/ trainer.db drizzle/
