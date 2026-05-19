@@ -1,0 +1,23 @@
+{
+  "name": "personal-trainer",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "seed": "tsx src/db/seed.ts",
+    "migrate": "drizzle-kit push"
+  },
+  "dependencies": {
+    "@apollo/server": "^5.0.0",
+    "drizzle-orm": "^0.38.0",
+    "graphql": "^16.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "drizzle-kit": "^0.29.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
